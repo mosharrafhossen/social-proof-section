@@ -111,7 +111,9 @@
       font-weight: 400;
       margin-top: 4px;
     }
-@media (max-width: 900px) {
+
+
+    @media (max-width: 900px) {
   body {
     background-image:
       url('./images/bg-pattern-top-mobile.svg'),
@@ -127,8 +129,19 @@
     margin: 0 auto;
   }
 
+  /* Ratings section */
   .ratings {
     margin-top: 40px;
+    align-items: center;
+  }
+
+  .rating {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+    padding: 16px 20px;
   }
 
   .rating:nth-child(2),
@@ -136,6 +149,12 @@
     margin-left: 0;
   }
 
+  .stars {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Cards section */
   .cards {
     flex-direction: column;
     gap: 20px;
